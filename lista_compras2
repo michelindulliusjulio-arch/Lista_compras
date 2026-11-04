@@ -1,0 +1,27 @@
+lista = []
+
+while True:
+    print("LISTA DE COMPRAS")
+    print("1 - Adicionar produto")
+    print("2 - Ver lista")
+    print("3 - Sair")
+
+    opcao = input("Escolha: ")
+
+    if opcao == "1":
+        produto = input("Digite o produto: ")
+        lista.append(produto)
+        print("Produto adicionado!")
+
+    elif opcao == "2":
+        print("Sua lista:")
+
+        for produto in lista:
+            print("-", produto)
+
+    elif opcao == "3":
+        print("Até mais!")
+        break
+
+    else:
+        print("Opção inválida!")
